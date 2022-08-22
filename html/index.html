@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <section class="home position-relative">
+
+        <nav class="navbar navbar-expand-lg navbar-dark  py-5">
+            <div class="container">
+                <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                    <div class="layer w-25">
+                        <img src="../images/logo@2x.png" class="w-100" alt="">
+                    </div>
+
+                    <div class="logo-caption ml-3">
+                        <h5>Weather</h5>
+                        <p>tagline goes here</p>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link home-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">News <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Live Cameras <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Photos <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="home-bg ">
+            <div class="bg-image"></div>
+            <div class="bg-color"></div>
+        </div>
+
+        <div class="weather ">
+            <div class="container">
+
+                <div class="weather-input">
+                    <div class="form-group mb-5">
+                        <input type="text" placeholder="Find your Location..." class="form-control" id="location" aria-describedby="emailHelp">
+                        <button id="find" class="btn btn-primary">Find</button>
+                    </div>
+                </div>
+                <div class="weather-caption">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="one">
+                                <div class="date d-flex justify-content-between text-white p-2">
+                                    <p id="cday"></p>
+                                    <p id="cdate"></p>
+                                </div>
+                                <div class="p-3 text-white current-weather-container"> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="two tomorrow-weather-container pb-3"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="two after-tomorrow-weather-container pb-3"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="caption">
+                        <div class="form-group mb-4">
+                            <input type="email" placeholder="Enter your email subscribe..." class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-2 ">
+                    <div class="icons d-flex justify-content-around">
+                        <div class="layer d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="layer d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="layer d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                        <div class="layer d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/jquery.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
